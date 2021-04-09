@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+* {
+  outline-style: none;
+}
+
+.imgContainer, .info img, .home img {
+  animation: bounce 4s infinite;
+}
+
+footer p {
+  letter-spacing: 1px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.active {
+  color : rgb(153, 120, 253)
+}
+
+.group {
+  border-radius : 10px;
+}
+
+.containerBoxAlert {
+    top : 0px;
+    min-height: 50px;
+    left : 0; right : 0;
+    transform: translateY(-100%);
+}
+
+#ketua {
+  transform: scale(1.5);
+}
+
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+    animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(5%);
+    animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.secondInfo,.thirdInfo, .firstInfo {
+  position: absolute;
+}
+
+.thirdInfo, .secondInfo {
+  transform: translateY(-150%);
+}
+.coverInfo {
+  min-height: 200vh;
+}
+.dot,.layerContent {
+  margin-top: -60px;
+}
+
+.dot span {
+  transform: scale(2);
+}
+
+.closeBtnLayer {
+  position: absolute;
+  top : 10px;
+  left: 10px;
+}
+
+.layer {
+  top : 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  transform: translateY(-100%);
+}
+
+nav {
+  top : 0;
+  left : 0;
+  right: 0;
+}
+
+.allContainer {
+  min-height: 100vh;
+}
